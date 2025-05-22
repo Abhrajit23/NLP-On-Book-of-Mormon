@@ -1,41 +1,74 @@
-## Book of Mormon Text Analysis
+# 📖 Book of Mormon Text Analysis
 
-### Overview
-This repository contains code and data for analyzing the text of the Book of Mormon using Natural Language Processing (NLP) techniques with Python's NLTK library. The analysis aims to provide insights into the usage of specific words, common phrases, and overall linguistic patterns within the text.
+### Author: Abhrajit Das
 
-### Dataset
-The dataset used in this analysis is the text of the Book of Mormon, stored in the `book_of_mormon.txt` file. It includes the entire text of the Book of Mormon, translated by Joseph Smith, Jr. The text is encoded in ISO-8859-1 format.
+---
 
-### Text Preprocessing
-The text preprocessing steps include tokenization using NLTK's `word_tokenize` function, which separates the text into individual words. Additionally, NLTK's `Text` class is used to create a searchable version of the text for further analysis.
+## 🧾 Overview
 
-### Analysis
-#### 1. Word Frequency Analysis
-- **Objective**: Analyze the frequency of occurrence of words in the Book of Mormon.
-- **Method**: Utilize NLTK's `FreqDist` class to compute the frequency distribution of words.
-- **Outcome**: Identify the most common words and their frequencies in the text.
+This project applies **Natural Language Processing (NLP)** techniques using Python’s **NLTK** library to analyze the **Book of Mormon**. The goal is to uncover patterns in word usage, common contexts, and linguistic structure, offering deeper insights into the themes and language of the text.
 
-#### 2. Concordance Analysis
-- **Objective**: Identify instances of specific words and examine their contexts in the text.
-- **Method**: Utilize NLTK's `concordance` function to display occurrences of the word "Christ" and analyze its surrounding context.
-- **Outcome**: Gain insights into the usage of the word "Christ" throughout the text.
+---
 
-#### 3. Similarity Analysis
-- **Objective**: Identify words that appear in similar contexts as a given word.
-- **Method**: Utilize NLTK's `similar` function to identify words similar to "Christ" in their usage context.
-- **Outcome**: Discover words that frequently appear alongside "Christ" in the text.
+## 📚 Dataset
 
-#### 4. Common Contexts Analysis
-- **Objective**: Identify common contexts in which pairs of words appear together.
-- **Method**: Utilize NLTK's `common_contexts` function to identify common contexts for pairs of words, such as "Jesus" and "Christ".
-- **Outcome**: Understand the contexts in which specific word pairs are commonly used in the text.
+* **File:** `book_of_mormon.txt`
+* **Source:** Full text of the Book of Mormon (translated by Joseph Smith, Jr.)
+* **Encoding:** ISO-8859-1
+* **Size:** Full text corpus
 
-#### 5. Dispersion Plot
-- **Objective**: Visualize the distribution of specific words throughout the text.
-- **Method**: Utilize NLTK's `dispersion_plot` function to create a dispersion plot showing the locations of words like "Christ", "repentance", "love", etc., in the text.
-- **Outcome**: Gain insights into the distribution and clustering of key words throughout the text.
+---
 
-### Conclusion
-This project demonstrates how NLP techniques can be applied to analyze religious texts like the Book of Mormon. By examining word frequencies, concordances, similarities, common contexts, and dispersion patterns, researchers can gain deeper insights into the linguistic characteristics and thematic content of religious texts.
+## 🧹 Text Preprocessing
 
-For further inquiries or assistance, please DM!
+* Tokenization using `nltk.word_tokenize`
+* Creation of searchable text using `nltk.Text`
+* Cleaning and formatting for consistent analysis
+
+---
+
+## 🔍 Analysis Components
+
+### 1️⃣ Word Frequency Analysis
+
+* **Goal:** Identify the most frequently used words
+* **Tool:** `nltk.FreqDist`
+* **Output:** List of top words with counts
+
+### 2️⃣ Concordance Analysis
+
+* **Goal:** Find occurrences and surrounding context of specific words (e.g., *Christ*)
+* **Tool:** `text.concordance("Christ")`
+* **Insight:** Understand how key religious terms are used throughout the text
+
+### 3️⃣ Similarity Analysis
+
+* **Goal:** Find words used in similar contexts as *Christ*
+* **Tool:** `text.similar("Christ")`
+* **Insight:** Discover related terms and thematic associations
+
+### 4️⃣ Common Contexts
+
+* **Goal:** Explore shared contexts for word pairs like *Jesus* and *Christ*
+* **Tool:** `text.common_contexts(["Jesus", "Christ"])`
+* **Insight:** Analyze word-pair relationships and theological themes
+
+### 5️⃣ Dispersion Plot
+
+* **Goal:** Visualize keyword distribution over the corpus
+* **Tool:** `text.dispersion_plot(["Christ", "repentance", "love", "sin", "faith"])`
+* **Insight:** Track the location and density of core religious themes
+
+---
+
+## ✅ Conclusion
+
+This analysis showcases the use of **NLP in religious text mining**, revealing patterns in usage, themes, and structure within the Book of Mormon. These techniques can be extended to other scriptures or large textual corpora for comparative religious studies, linguistics, or digital humanities research.
+
+---
+
+## 📬 Contact
+
+For questions, feedback, or collaboration:
+📧 **[abhrajit.breathin@gmail.com](mailto:abhrajit.breathin@gmail.com)**
+🔗 [LinkedIn](https://www.linkedin.com) | 🌐 [Open-talk.co](https://open-talk.co)
